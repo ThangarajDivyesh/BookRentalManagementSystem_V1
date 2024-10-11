@@ -153,6 +153,9 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="BookManager.cs" />
+    <Compile Include="EBook.cs" />
+    <Compile Include="IBook.cs" />
+    <Compile Include="PrintedBook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

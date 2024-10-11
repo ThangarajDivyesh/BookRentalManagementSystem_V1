@@ -59,7 +59,7 @@ namespace BookRentalManagementSystem_V1
             {
                 var book = books.FirstOrDefault(c=>c.Equals(bookId));
                 books.Remove(book);
-                Console.WriteLine(bookId);
+                Console.WriteLine($"deleted{bookId}");
             }
             else
             {

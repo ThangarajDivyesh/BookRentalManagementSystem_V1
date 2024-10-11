@@ -29,5 +29,33 @@ namespace BookRentalManagementSystem_V1
             }
         }
 
+        public void UpdateBook(string bookId,string title,string author,decimal rentalprice)
+        {
+           if(books.Count != 0)
+            {
+                var book = books.FirstOrDefault(b=>b.Equals(bookId));
+            }
+
+           else
+            {
+                Console.WriteLine("enetr correct id");
+            }
+        }
+
+        public void DeleteBook(string bookId)
+        {
+            if(books.Count != 0)
+            {
+                var book = books.FirstOrDefault(c=>c.Equals(bookId));
+                books.Remove(book);
+                Console.WriteLine("remove book");
+            }
+            else
+            {
+                Console.WriteLine("enter correct id");
+            }
+        }
+        
+
     }
 }

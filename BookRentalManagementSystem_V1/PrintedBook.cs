@@ -17,5 +17,9 @@ namespace BookRentalManagementSystem_V1
             this.NumberOfPages = NumberOfPages;
             this.ISBN = ISBN;
         }
+        public override string DisplayPrintedBookInfo()
+        {
+            return $"{base.DisplayPrintedBookInfo()},isbn{ISBN},NumberOfPages{NumberOfPages}";
+        }
     }
 }

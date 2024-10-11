@@ -31,6 +31,9 @@ namespace BookRentalManagementSystem_V1
             return $"bookId: {bookId}, title: {title}, author: {author}, rentalPrice: {rentalPrice}";
         }
 
-
+        internal object DisplayPrintedBookInfo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

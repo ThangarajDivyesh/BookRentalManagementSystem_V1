@@ -24,11 +24,15 @@ namespace BookRentalManagementSystem_V1
             this.Format = Format;
             
             }
+        public override string DisplayDigitalBookInfo()
+        {
+            return $"{base.DisplayDigitalBookInfo()},filesize{FileSize},format{Format}";
+        }
 
 
 
 
-         
-        
+
+
     }
 }

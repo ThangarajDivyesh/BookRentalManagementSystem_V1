@@ -16,7 +16,7 @@ namespace BookRentalManagementSystem_V1
 
         private decimal rentalPrice { get; set; }
 
-        private Book(string bookId, string title, string author, decimal rentalPrice)
+      public Book(string bookId, string title, string author, decimal rentalPrice)
         {
             this.bookId = bookId;
             this.title = title;
